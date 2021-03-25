@@ -1,0 +1,139 @@
+// Separator
+
+.spr {
+  border-top: 1px solid $black;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: $white;
+    position: absolute;
+  }
+}
+
+// Text
+
+.txt {
+  font-size: clamp($fs__base--sm, 2.5vw, $fs__base--lg);
+  color: $black;
+  line-height: 1.6;
+}
+
+.txt__imp {
+  @extend .txt;
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  border-bottom: 3px solid $green;
+}
+
+// Button
+
+.btn {
+  width: inherit;
+  margin-bottom: $fs__base--sm;
+  position: relative;
+  a {
+    all: unset;
+    display: block;
+    width: 100%;
+    @include center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    border: 1px solid $black;
+    color: $black;
+    background-color: $gray;
+    font-family: inherit;
+    font-size: clamp($fs__base--sm, 2.5vw, $fs__base--lg);
+    outline: none;
+    box-shadow: inset 3px 3px 0 $white;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+
+    &:active {
+      top: 7px;
+    }
+  }
+
+  div {
+    all: unset;
+    width: 100%;
+    height: 35px;
+    border: 1px solid $black;
+    position: absolute;
+    top: 11px;
+    margin: 0 auto;
+  }
+}
+
+.btn .btn__y {
+  background-color: $bg__y;
+}
+
+.btn .btn__p {
+  background-color: $bg__p;
+}
+
+.btn .btn__b {
+  background-color: $bg__b;
+}
+
+.btn .btn__g {
+  background-color: $gray--dark;
+}
+
+//Heading
+
+.sct__h {
+  width: 100%;
+  border: 1px solid $black;
+  background-color: $gray;
+  background-image: url('../static/dots.svg');
+  background-size: 12px;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+  box-shadow: inset 3px 3px 0 $gray--dark;
+  height: clamp($space--lg, 7vw, $space--xl);
+  margin: 0 auto $fs__base--sm auto;
+  position: relative;
+  @include center;
+  user-select: none;
+
+  img {
+    display: none;
+    @media screen and (min-width: $md) {
+      display: block;
+      width: clamp(2.2rem, 4vw, $space--sm);
+      height: clamp(2.2rem, 4vw, $space--sm);
+    }
+  }
+
+  h2 {
+    @extend .txt__imp;
+    font-size: clamp($fs__h--sm, 3vw, $fs__h--lg);
+    @media screen and (min-width: $md) {
+      margin: 0 15px;
+      font-weight: 300;
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: $white;
+    position: absolute;
+    bottom: -5px;
+  }
+}

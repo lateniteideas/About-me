@@ -1,0 +1,17 @@
+.sct2__qs {
+  margin: 10px auto 15px auto;
+
+  h3 {
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+}
+
+.sct2__qs--q {
+  padding: 15px 20px;
+  margin: 5px 0;
+
+  &:nth-child(even) {
+    background-color: #dcdcdc;
+  }
+}

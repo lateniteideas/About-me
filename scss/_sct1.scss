@@ -1,0 +1,88 @@
+#sct1 {
+  @include center;
+  flex-wrap: wrap;
+  padding-top: 6px;
+  @media screen and (min-width: $lg) {
+    justify-content: space-between;  
+  }
+}
+
+.sct1__h {
+  position: relative;
+  margin: 20px auto 0;
+  flex-basis: 90%;
+  max-width: 600px;
+  min-width: 240px;
+  @include center;
+  @media screen and (min-width: $lg) {
+    margin: $fs__base--lg auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    font-size: 0.8rem;
+    position: absolute;
+    top: -$fs__base--sm;
+    right: 0;
+  }
+}
+
+#sct1 .spr {
+  margin-top: 20px;
+  flex-basis: 100%;
+
+  @media screen and (min-width: $lg) {
+    order: 1;
+  }
+}
+
+.sct1__c {
+  margin-top: $fs__base--sm;
+  flex-basis: 90%;
+
+  @media screen and (min-width: $lg) {
+    flex-basis: 45%;
+    margin-top: 10px;
+  }
+}
+
+.sct1__c--txt {
+  margin-bottom: $fs__base--sm 0;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  p:last-of-type {
+    margin-top: 5px;
+  }
+
+}
+
+#sct1 .btn {
+  margin: $fs__base--sm auto;
+}
+
+.sct1__pc {
+  flex-basis: 90%;
+  max-width: 400px;
+  margin-top: $fs__base--sm;
+  // border: 1px solid red;
+  position: relative;
+  z-index: 10;
+  @include center;
+
+  @media screen and (min-width: $lg) {
+    flex-basis: 48%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,68 @@
+#sct3 .sct3__c {
+  @include center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  
+  @media screen and (min-width: $lg) {
+    justify-content: space-between;
+    align-items: center;
+  }
+  p {
+    margin-bottom: 10px;
+    flex-basis: 100%;
+    padding: 0 15px;
+    @media screen and (min-width: $lg) {
+      flex-basis: 45%;
+      margin: $fs__base--sm 0;
+      padding: 0;
+    }
+  }
+  span {
+    border-bottom: 3px solid $green;
+  }
+}
+
+#sct3 .sct3__c--btns {
+  margin: $fs__base--sm 0;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+
+  @media screen and (min-width: $lg) {
+    flex-basis: 50%;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  div {
+    flex-basis: 48%;
+    @media screen and (min-width: $lg) {
+      flex-grow: 0;
+    }
+  }
+
+  div:last-of-type {
+    flex-grow: 1;
+  }
+}
+
+#sct3 .sct3__btns {
+  margin: $fs__base--lg auto;
+  width: 100%;
+  padding: 0 10px;
+
+  @media screen and (min-width: $lg) {
+    display: flex;
+    margin: $fs__base--lg 0;
+    width: 75%;
+    padding: 0;
+  }
+
+  .btn:last-of-type {
+    @media screen and (min-width: $lg) {
+      margin-left: 15px;
+    }
+  }
+}

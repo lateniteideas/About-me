@@ -1,0 +1,60 @@
+// MIXINS
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// GLOBAL STYLES
+* {
+  box-sizing: border-box;
+  letter-spacing: 0.01rem;
+  scroll-behavior: smooth;
+  &::selection {
+    background-color: $gray--dark;
+  }
+  &::-webkit-scrollbar {
+    width: 3px;
+    @media screen and (min-width: $lg) {
+      display: block;
+      width: 15px;
+    }
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray--dark;
+    @media screen and (min-width: $lg) {
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+      border-left: 1px solid $black;
+    }
+  }
+}
+
+html,
+body {
+  font-family: Consolas, monospace;
+  height: 100vh;
+}
+
+body {
+  @include center;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+}

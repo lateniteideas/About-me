@@ -1,0 +1,120 @@
+.bg {
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  background-color: $bg__y;
+  background-image: url("../static/dots.svg");
+  background-blend-mode: multiply;
+  background-repeat: repeat;
+  background-size: 12px;
+  transition: all .2s steps(3);
+  position: fixed;
+  z-index: -10;
+}
+
+// Interface
+.if {
+  width: 85%;
+  max-width: 1000px;
+  min-width: 280px;
+  height: 95%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $gray;
+  border: 1px solid $black;
+}
+
+.if__shadow {
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  background-blend-mode: multiply;
+  opacity: 0.1;
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  z-index: -1;
+}
+
+// Interface Header
+
+.if__h {
+  width: 100%;
+  height: clamp($space--sm, 6vw, $space--lg);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $black;
+  position: relative;
+  z-index: 20;
+
+  img {
+    height: inherit;
+  }
+
+  h1 {
+    margin-left: 20px;
+    user-select: none;
+    position: relative;
+  }
+}
+
+.if__h--shadow {
+  width: 100%;
+  height: 3px;
+  background-color: $white;
+  margin-bottom: 5px;
+}
+
+// Interface Main Content
+
+.if__mc {
+  width: 98%;
+  height: 100%;
+  overflow-y: scroll;
+  @media screen and (min-width: $lg) {
+    width: 100%;
+  }
+
+  .sct {
+    padding: $fs__base--sm 5px 0 5px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+    @media screen and (min-width: $md) {
+      width: 75%;
+      padding-top: $fs__base--sm;
+    }
+  }
+}
+
+// Sections
+
+@import "sct1";
+@import "sct2";
+@import "sct3";
+
+// Interface Footer
+
+.if__f {
+  width: 100%;
+  height: clamp($space--sm, 6vw, $space--lg);
+  margin-top: 3px;
+  position: relative;
+  @include center;
+
+  p {
+    font-size: $fs__base--sm;
+    user-select: none;
+  }
+
+  .spr {
+    position: absolute;
+    top: 0;
+    width: 80%;
+  }
+}
+

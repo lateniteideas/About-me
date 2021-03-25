@@ -1,0 +1,5 @@
+
+
+<svg class="info__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+        <path class="info-icon-bg" fill="#31312d" d="M0 0h48v48H0z"/><path fill="#fbf7f4" d="M20.2 7.5h7.6v1.3h-7.6zM20.2 39.29h7.6v1.3h-7.6zM27.8 8.8h3.8v1.3h-3.8zM16.4 8.8h3.8v1.3h-3.8z"/><path fill="#fbf7f4" d="M30.3 10.1h3.8v1.3h-3.8zM13.9 10.1h3.8v1.3h-3.8zM34.1 11.3h1.3v1.3h-1.3z"/><path fill="#fbf7f4" d="M12.6 11.3h1.3v1.3h-1.3zM35.4 12.6h1.3v1.3h-1.3z"/><path fill="#fbf7f4" d="M11.3 12.6h1.3v1.3h-1.3zM36.7 13.9H38v2.5h-1.3zM10 13.9h1.3v2.5H10zM38 16.4h1.3v2.5H38zM8.7 16.4H10v2.5H8.7zM39.2 18.9h1.3v10.2h-1.3zM7.4 18.9h1.3v10.2H7.4zM37.95 29.1h1.3v2.5h-1.3zM8.7 29.1H10v2.5H8.7zM36.7 31.6H38v2.5h-1.3zM10 31.6h1.3v2.5H10zM35.4 34.1h1.3v1.3h-1.3zM11.3 34.1h1.3v1.3h-1.3zM34.1 35.4h1.3v1.3h-1.3zM12.6 35.4h1.3v1.3h-1.3z"/><path fill="#fbf7f4" d="M30.35 36.69h3.8v1.3h-3.8zM13.9 36.69h3.8v1.3h-3.8zM27.8 37.99h3.8v1.3h-3.8zM16.4 37.99h3.8v1.3h-3.8zM22.2 15.9h3.7v3.7h-3.7zM28.1 30.8v1.3h-8.2v-1.3h1.59v-7.4H19.9v-1.3h6.6v8.7h1.6z"/>
+</svg>
